@@ -1,5 +1,61 @@
+:root {
+  /* Cores */
+  --color-yellow: #F9BE26;
+  --color-black: #000000;
+  --color-white: #FFFFFF;
+  --color-dark-red: #1F0404;
+
+  /* Fonte Size */
+  --size-small: 0.75em;
+  --size-regular: 0.88em;
+  --size-medium: 1.13em;
+  --size-large: 1.75em;
+  --size-x-large: 2.5em;
+
+  /* Fonte Family */
+  --fonte-Montserrat: "Montserrat", sans-serif;
+  --fonte-Alfa: "Alfa Slab One", serif;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
 }
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-Family: var(--fonte-Montserrat);
+}
+
+.header {
+  height: 108px;
+  background-color: var(--color-yellow);
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.nav--menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.nav--icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+
