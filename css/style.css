@@ -31,19 +31,19 @@
 body {
   height: 100vh;
   width: 100vw;
-  font-Family: var(--fonte-montserrat);
+  font-family: var(--fonte-montserrat);
   font-size: var(--size-regular);
 }
 
 /* PADRÕES */
 .titulo {
-  font-Family: var(--fonte-alfa);
+  font-family: var(--fonte-alfa);
   font-size: var(--size-x-large);
   color: var(--color-yellow);
 }
 
 .subtitulo {
-  font-Family: var(--fonte-montserrat);
+  font-family: var(--fonte-montserrat);
   font-size: var(--size-large);
   color: var(--color-white);
 }
@@ -58,7 +58,7 @@ body {
   font-weight: bold;
   border: none;
   border-radius: 5px;
-  font-Family: var(fonte-montserrat);
+  font-family: var(fonte-montserrat);
   font-size: var(--size-medium);
   cursor: pointer;
 }
@@ -226,7 +226,7 @@ body {
   color: var(--color-yellow);
   font-weight: bold;
 }
-
+/* Footer */
 .footer {
   display: flex;
   flex-direction: column;
@@ -236,6 +236,7 @@ body {
 
 .footer--top {
   display: flex;
+  justify-content: center;
   gap: 150px;
   color: var(--color-white);
   height: 230px;
