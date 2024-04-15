@@ -7,6 +7,7 @@
   --color-white: #FFFFFF;
   --color-dark-red: #1F0404;
   --color-trans-red: rgba(31, 4, 4, 0.7);
+  --color-input-red: #360E0E;
 
   /* Fonte Size */
   --size-small: 0.75em;
@@ -66,6 +67,16 @@ body {
 
 .button:hover {
   background-color: var(--color-dark-yellow);
+  color: var(--color-white);
+}
+
+.input {
+  display: flex;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--color-input-red);
+  padding: 10px;
+  font-family: var(--fonte-montserrat);
   color: var(--color-white);
 }
 
@@ -377,11 +388,10 @@ body {
 
 .planos{
   display: flex;
-  padding-inline: 100px;
+  padding: 25px 100px;
   justify-content: space-between;
   font-size: var(--size-medium);
   line-height: 1.6rem;
-  padding-block: 25px;
   gap: 50px;
 }
 
@@ -438,4 +448,39 @@ body {
 .planos--button {
   width: 100%;
   padding: 25px;
+}
+
+.contato {
+  display: flex;
+  padding: 25px 100px;
+  color: var(--color-white);
+  font-size: var(--size-medium);
+  gap: 150px;
+}
+
+.contato--dados-texto {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contato h3 {
+  color: var(--color-yellow);
+}
+
+.contato--form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+
+.contato--text-field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.contato--form .button {
+  width: 50%;
 }
