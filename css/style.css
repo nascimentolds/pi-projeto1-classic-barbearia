@@ -72,6 +72,15 @@ body {
   line-height: 1.5rem;
 }
 
+.main--top-text {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-inline: 100px;
+  color: var(--color-white);
+  margin-top: 50px;
+}
+
 /* -------------- */
 
 .header {
@@ -135,7 +144,7 @@ body {
 
 .hero {
   display: flex;
-  align-items: center;
+  align-items: start;
   height: 600px;
   position: relative;
   background-color: var(--color-trans-red);
@@ -159,6 +168,7 @@ body {
   max-width: 560px;
   margin-left: 100px;
   color: var(--color-white);
+  margin-top: 50px;
 }
 
 .hero--logo {
@@ -286,7 +296,7 @@ body {
 
 .sobre {
   display: flex;
-  align-items: center;
+  align-items: start;
   height: 600px;
   background-color: var(--color-dark-red)
 }
@@ -296,6 +306,7 @@ body {
   display: flex;
   justify-content: flex-end;
   margin-right: 100px;
+  margin-top: 50px;
 }
 
 .sobre--pontos {
@@ -323,42 +334,44 @@ body {
 
 .servicos{
   display: flex;
-  padding-top: 1%;
   flex-direction: column;
   background-color: var(--color-dark-red);
   gap: 40px;
+  padding-bottom: 40px;
 }
+
 .servicos--lista{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
-  padding-inline: 100px;
+  padding: 30px 100px 0 100px;
 }
 
 .servicos--item{
-/* position: relative; */
-width: 295px;
+  width: 236px;
+  margin-bottom: 20px;
 }
-.descricao{
-  /* position: relative; */
-  width: 80%;
-  bottom: 16px;
+
+.servicos--box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: var(--color-yellow);
-  padding: 5px;
-  box-sizing: border-box;
-  border-radius: 11px;
-}
-.descricao h2{
-  color: var(--color-black);
+  border-radius: 10px;
+  color: var(--color-dark-red);
   text-align: center;
-  font-size: 22px;
+  font-size: var(--font-size-medium);
   font-weight: bold;
+  margin-bottom: 15px;
 }
+
+.servicos--box h2 {
+  padding-block: 5px;
+}
+
 .servicos--item p{
   color: var(--color-white);
-  font-size: 12px;
-  text-align: justify;
-  margin-bottom: 25px;
+  font-size: var(--size-normal);
 }
 
 .planos{
@@ -375,26 +388,30 @@ width: 295px;
   gap: 30px;
   padding-inline: 100px;
 }
+
 .planos--item{
   width: 295px;
-  }
-  .descricao{
-    width: 80%;
-    bottom: 16px;
-    background-color: var(--color-yellow);
-    padding: 5px;
-    box-sizing: border-box;
-    border-radius: 11px;
-  }
-  .descricao h2{
-    color: var(--color-black);
-    text-align: center;
-    font-size: 22px;
-    font-weight: bold;
-  }
-  .planos--item p{
-    color: var(--color-white);
-    font-size: 12px;
-    text-align: justify;
-    margin-bottom: 25px;
-  }
+}
+
+.descricao{
+  width: 80%;
+  bottom: 16px;
+  background-color: var(--color-yellow);
+  padding: 5px;
+  box-sizing: border-box;
+  border-radius: 11px;
+}
+
+.descricao h2{
+  color: var(--color-black);
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.planos--item p{
+  color: var(--color-white);
+  font-size: 12px;
+  text-align: justify;
+  margin-bottom: 25px;
+}
