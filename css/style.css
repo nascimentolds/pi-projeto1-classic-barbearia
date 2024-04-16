@@ -118,13 +118,20 @@ body {
   height: 100%;
 }
 
+.nav--responsivo {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
 .nav--menu {
   display: flex;
   align-items: center;
   gap: 20px;
   width: 100%;
   justify-content: flex-end;
-  margin-right: 50px;
+  margin-inline: 50px;
   height: 100%;
 }
 
@@ -197,6 +204,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-inline: 20px;
 }
 
 .depoimentos {
@@ -261,6 +269,7 @@ body {
   color: var(--color-yellow);
   font-weight: bold;
 }
+
 /* Footer */
 .footer {
   display: flex;
@@ -302,6 +311,20 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px
+}
+
+.footer--icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer--icon-link {
+  transition: 200ms linear;
+}
+
+.footer--icon-link:hover {
+  transform: scale(1.1);
 }
 
 .footer--bottom {
@@ -483,4 +506,173 @@ body {
 
 .contato--form .button {
   width: 50%;
+}
+
+#menu--toggle {
+  display: none;
+}
+
+/* RESPONSIVIDADE */
+
+@media only screen and (max-width: 950px) {
+  /* NAV */
+  #menu--toggle {
+    display: block;
+    position: absolute;
+    right: 30px;
+    width: 50px;
+    z-index: 9999;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+  }
+
+  .menu--botao {
+    width: 30px;
+  }
+
+  .nav--responsivo {
+    display: none;
+    background-color: var(--color-black);
+    max-width: 350px;
+    height: 100%;
+    top: 0px;
+    right: 0;
+    position: absolute;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 1;
+    gap: 50px;
+
+    animation-duration: 1s;
+    animation-name: slidein;
+  }
+
+  @keyframes slidein {
+    from {
+      right: -350px;
+    }
+  
+    to {
+      right: 0;
+    }
+  }
+
+  .nav--menu {
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+    width: 100%;
+    justify-content: flex-start;
+    margin: 0px;
+    height: 0px;
+    margin-top: 120px;
+    margin-bottom: 250px;
+  }
+  
+  .nav--menu a, .nav--menu li {
+    color: var(--color-white);
+    padding-left: 30px;
+  }
+
+  .nav--menu li a:hover {
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-left: 4px solid var(--color-white);
+  }
+  
+  .nav--link-active {
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-left: 4px solid var(--color-white);
+  }
+  
+  .nav--icons {
+    gap: 0px;
+    margin: 0px;
+    height: 0px;
+    padding-left: 30px;
+  }  
+
+  .nav--icon-link {
+    fill: var(--color-white);
+  }
+
+  /* Footer */
+  .footer--top {
+    flex-direction: column;
+    justify-content: center;
+    gap: 60px;
+    height: 100%;
+    width: 100%;
+    margin-top: 50px;
+    padding-inline: 40px;
+    text-align: center;
+  }
+
+  .footer--top a {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer--logo {
+    width: 60%;
+    height: 60%;
+    display: flex;
+    align-self: center;
+  }
+
+  .footer--atendimento {
+    gap: 20px
+  }
+
+  .footer--icons {
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .hero::before {
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+  }
+
+  .hero--logo {
+    display: none;
+  }
+
+  .hero--text {
+    margin-left: 0px;
+    padding-inline: 40px;
+    margin-bottom: 50px;
+  }
+
+  .titulo {
+    letter-spacing: 2px;
+  }
+
+  .depoimentos {
+    padding: 50px 40px;
+  }
+  
+  .depoimentos--subtitulo {
+    width: 100%;
+    text-align: left;
+    
+  }
+  
+  .depoimentos--items {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 60px;
+  }
 }
