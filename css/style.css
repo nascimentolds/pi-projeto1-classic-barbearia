@@ -515,6 +515,9 @@ body {
 /* RESPONSIVIDADE */
 
 @media only screen and (max-width: 950px) {
+  .header {
+    padding-inline: 40px;
+  }
   /* NAV */
   #menu--toggle {
     display: block;
@@ -534,7 +537,7 @@ body {
   .nav--responsivo {
     display: none;
     background-color: var(--color-black);
-    max-width: 350px;
+    max-width: 300px;
     height: 100%;
     top: 0px;
     right: 0;
@@ -550,7 +553,7 @@ body {
 
   @keyframes slidein {
     from {
-      right: -350px;
+      right: -300px;
     }
   
     to {
@@ -675,4 +678,60 @@ body {
     justify-content: space-between;
     gap: 60px;
   }
+
+  .sobre {
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .sobre--pontos-container {
+    flex-direction: column;
+    justify-content: center;
+    padding-inline: 40px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+  }
+  
+  .sobre--pontos {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+  .sobre--item {
+    width: 100%;
+  }
+
+  .main--section{
+    padding-bottom: 50px;
+  }
+  
+  .main--top-text {
+    margin-inline: 40px;
+  }
+
+  .servicos--lista{
+    grid-template-columns: 1fr;
+    padding: 30px 40px 0 40px;
+  }
+  
+  .servicos--item{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .planos{
+    flex-direction: column;
+    padding: 25px 40px;
+    justify-content: center;
+  }
+  
+  .planos--item{
+    width: 100%;
+  }
+
+  .contato {
+    flex-direction: column;
+    padding: 25px 40px;
+    gap: 50px;
+  }  
 }
