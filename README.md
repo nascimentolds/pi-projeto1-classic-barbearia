@@ -27,5 +27,5 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
 ## Links
 
-- [Site ao vivo](#) [https://classic-barbearia.vercel.app/]
+- [Site ao vivo](https://classic-barbearia.vercel.app)
 
